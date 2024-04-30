@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- kwizera jean felix 222005550 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Delivery App Management Project README</title>
+     <div>  <img src="./photo/berba.jpg" width="80" height="80" alt="Logo">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: green;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: green;
+            margin-top: 20px;
+        }
+        p {
+            color: green;
+            margin-bottom: 15px;
+        }
+        pre {
+            background-color: green;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 15px;
+        }
+        code {
+            font-family: monospace;
+            color: green;
+        }
+        ul {
+            list-style-type: disc;
+            margin-bottom: 15px;
+        }
+        ul li {
+            margin-left: 20px;
+        }
+        a {
+            color: #green; /* GitHub link color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* CSS for back button */
+        .back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none; /* Added to remove underline */
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body bgcolor="yellow">
+
+    <button class="back-button" onclick="window.location.href='contact.html'">BACK</button>
+
+    <a href="home.html">Home</a>
+        
+    <!-- Dropdown for Forms -->
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Forms</a>
+        <div class="dropdown-content">
+            <a href="customer.html">customer</a>
+            <a href="fuel_station.html">fuel_station</a>
+            <a href="banks.html">banks</a>
+            <a href="driver.html">driver</a>
+            <a href="fuel_suppler.html">fuel_suppler</a>
+        </div>
+    </div>
+    
+    <!-- Dropdown for Tables -->
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Tables</a>
+        <div class="dropdown-content">
+            <a href="customer.php">customer</a>
+            <a href="fuel_station.php">fuel_station</a>
+            <a href="banks.php">banks</a>
+            <a href="driver.php">driver</a>
+            <a href="fuel_suppler.php">fuel_suppler</a>
+        </div>
+    </div>
+     
+    <!-- Dropdown for CRUD -->
+    <div class="dropdown">
+        <a href="#" class="dropbtn">CRUD</a>
+        <div class="dropdown-content">
+            <a href="landingcustomer.html">customer</a>
+            <a href="landingbanks.html">banks</a>
+            <a href="landingdriver.html">driver</a>
+            <a href="landingfuel_station.html">fuel_station</a>
+            <a href="landingfuel_suppler.html">fuel_suppler</a>
+        </div>
+    </div>
+    <a href="abaut.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="README.html">README</a>
+    <a href="logout.php">Sign Out</a>
+    
+     <h1>Fuel Delivery App System Documentation</h1>
+
+    
+   <p> This application offers a suite of features tailored to meet the needs of both fuel delivery companies and their customers:</p>
+    <ul>
+        <li>Order Management: Customers can place orders for fuel delivery through the app, specifying the quantity and delivery location.</li>
+        <li>Real-Time Tracking: Customers can track the status of their orders in real-time, providing transparency and peace of mind.</li>
+        <li>Route Optimization: The app optimizes delivery routes for drivers, ensuring efficient fuel delivery and minimizing travel time.</li>
+        <li>Payment Integration: Seamless integration with payment gateways allows customers to make secure payments for their orders directly through the app.</li>
+        <li>Customer Support: Built-in customer support features enable users to easily get assistance or resolve any issues they encounter during the ordering process.</li>
+        <li>Driver Management: For fuel delivery companies, the app provides tools to manage drivers, assign delivery tasks, and track driver performance.</li>
+        <li>Analytics and Reporting: Comprehensive analytics and reporting functionalities provide insights into delivery performance, customer preferences, and other key metrics.</li>
+
+ <h1>Project Structure:</h1>
+
+The fuel delivery app system is structured to provide a seamless experience for users to order and receive fuel deliveries. The project is organized into several key components:
+
+<li>Frontend Interface: This component handles the user interface (UI) of the application. It includes screens for user registration, login, ordering fuel, tracking deliveries, and managing account settings.
+Backend Server: The backend server serves as the core of the application, handling user requests, managing data, and facilitating communication between the frontend interface and other system components.</li>
+<li>Database: The database stores user information, order history, delivery details, and other relevant data. It ensures data integrity and enables efficient retrieval and manipulation of information.</li>
+<li>Delivery Management System: This component is responsible for coordinating fuel deliveries, including assigning drivers to orders, optimizing delivery routes, and updating delivery status in real-time.</li>
+<li>Payment Gateway Integration: The system integrates with a payment gateway to facilitate secure online transactions for fuel purchases. It ensures that users can safely and conveniently make payments for their orders.</li>
+
+
+
+
+
+
+    </ul>
+    
+    <h2>Installation</h2>
+    <p>To install and run this project locally, follow these steps:</p>
+    <pre>
+        <code>
+            # Clone the repository
+            git clone <a href="https://github.com/berbatovfelix/fuel-delivery-app">https://github.com/berbatovfelix/fuel-delivery-app</a>
+            cd fuel-delivery-app
+            
+            # Install dependencies
+            composer install
+            
+            # Set up the database
+            php artisan migrate
+            
+            # Start the development server
+            php artisan serve
+        </code>
+    </pre>
+    
+    <h2>Usage</h2>
+    <p>Once the application is installed and running, you can access it in your web browser at <code>http://localhost/127.0.0.1/kwizera_jean_felix_fdamp</code>.  for detailed instructions on how to use the application.</p>
+    
+    <h2>Contributing</h2>
+    <p>If you'd like to contribute to this project, please follow these guidelines:</p>
+    <ul>
+        <li>Fork the <a href="https://github.com/berbatovfelix/fuel-delivery-app">repository</a></li>
+        <li>Create a new branch</li>
+        <li>Make your changes</li>
+        <li>Test your changes thoroughly</li>
+        <li>Submit a pull request</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+    
+</body>
+</html>
+ <!-- you can down load this project througg github -->

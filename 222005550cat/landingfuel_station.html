@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='contact.html'">BACK</button>
+    <!--kwizera jean felix 222005550--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuel_station Panel</title>
+</head>
+<body>
+    <h1>fuel_station Panel</h1>
+    
+    <!-- fuel_station Registration Form -->
+    <h2>Create fuel_station</h2>
+    <form method="post" action="landingfuel_station.php">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label for="address">address:</label><br>
+        <input type="address" name="address" required><br>
+        <label for="phone">phone:</label><br>
+        <input type="phone" name="phone" required><br>
+        
+        <select name="newpayment_method">
+            <option value="mtn">MTN</option>
+            <option value="tigo">Tigo</option>
+        </select>
+        <button type="submit" name="update">Update</button>
+        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="read">View</button>
+    </form>
+</body>
+</html>
+             <h2>User fuel_station </h2>
+     <form method="post" action="landingfuel_station.php">
+                    <input type="number" name="fuelsta_id" placeholder=" New fuelsta_id">
+                    <input type="text" name="newname" placeholder="New name">
+                    <input type="text" name="newaddress" placeholder="New address">
+                    <input type="text" name="newphone" placeholder="New phone ">
+                    <input type="text" name="newfuel_type" placeholder="New newfuel_type">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

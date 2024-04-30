@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='index.html'">BACK</button>
+    <!--kwizera jean felix 222005550--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuel_admin page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>fuel_admin page</h1>
+    
+    <!-- customer Registration Form -->
+    <h2>Create fuel_admin</h2>
+   <form method="post" action="landingfuel_admin.php">
+         <label for="email">email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="username">username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="Password">Password:</label><br>
+        <input type="number" name="Password" required><br>
+        <label for="first_name">firs_name:</label><br>
+        <input type="text" name="first_name" required><br>
+        <label for="last_name">last_name:</label><br>
+        <input type="text" name="last_name" required><br> <!-- Changed input type to "tel" for better mobile compatibility -->
+        <label for="phone_number">phone_number:</label><br>
+        <input type="number" name="phone_number" required><br>
+        <label for="permissions">permissions:</label><br>
+        <input type="text" name="permissions" required><br>
+        
+        </select><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    <button class="back-button" onclick="window.location.href='index.html'">BACK</button>
+    </center>
+</body>
+</html>

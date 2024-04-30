@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='contact.html'">BACK</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Station Page</title>
+    <!-- kwizera jean felix 22200555o -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <center>
+    <h1>Fuel Station Page</h1>
+    
+    <!-- Fuel Station Registration Form -->
+    <h2>Create Fuel Station</h2>
+    <form method="post" action="landingfuel_station.php">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" required><br> <!-- Changed input type to "tel" for phone number -->
+        <label for="fuel_type">Fuel Type:</label><br> 
+        <select name="fuel_type">
+            <option value="gaz">Gaz</option>
+            <option value="oil">Oil</option>
+            <option value="petroleum">Petroleum</option>
+        </select><br> <!-- Moved the closing tag outside the label -->
+        <button type="submit" name="create">Create</button>
+    </form>
+    </center>
+</body>
+</html>

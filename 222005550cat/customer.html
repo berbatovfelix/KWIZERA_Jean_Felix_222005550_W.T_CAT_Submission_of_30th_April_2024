@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardfuel_admin.html'">BACK</button>
+    <!--kwizera jean felix 222005550--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>customer page</h1>
+    
+    <!-- customer Registration Form -->
+    <h2>Create customer</h2>
+   <form method="post" action="landingcustomer.php">
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" name="last_name" required><br>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="first_name" required><br>
+        <label for="email">email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="phone" name="phone" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" required><br>
+        <label for="payment_method">Payment Method:</label><br>
+        <select name="payment_method">
+            <option value="mtn">MTN</option>
+            <option value="tigo">Tigo</option>
+        </select><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    <button class="back-button" onclick="window.location.href='dashboardfuel_admin.html'">BACK</button>
+    </center>
+</body>
+</html>

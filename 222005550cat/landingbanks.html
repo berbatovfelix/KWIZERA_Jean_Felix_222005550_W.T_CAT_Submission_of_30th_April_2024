@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--kwizera jean felix 2220005550--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banks Panel</title>
+</head>
+<body>
+    <h1>Banks Panel</h1>
+    
+    <!-- Bank Registration Form -->
+    <h2>Create Banks</h2>
+    <form method="post" action="landingbanks.php">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label>Address:</label><br>
+        <input type="text" name="address" required><br>
+        <label>Phone Number:</label><br>
+        <input type="number" name="phone_number" required><br>
+        <label>Account Number:</label><br>
+        <input type="number" name="account_number" required><br>
+        <label for="bankname">Bank Name:</label>
+        <select name="bankname">
+            <option value="BNR">BNR</option>
+            <option value="equity">Equity</option>
+            <option value="zigama">Zigama</option>
+        </select>
+        <button type="submit" name="create">Create</button>
+    </form>
+
+    <!-- User Banks Form -->
+    <h2>User Banks</h2>
+    <form method="post" action="landingbanks.php">
+        <input type="number" name="banks_id" placeholder="New Banks ID">
+        <input type="text" name="newname" placeholder="New Name">
+        <input type="text" name="newaddress" placeholder="New Address">
+        <input type="number" name="newphone_number" placeholder="New Phone Number">
+        <input type="text" name="newaccount_number" placeholder="New Account Number">
+        <label for="newbankname">New Bank Name:</label>
+        <select name="newbankname">
+            <option value="BNR">BNR</option>
+            <option value="equity">Equity</option>
+            <option value="zigama">Zigama</option>
+        </select>
+        <button type="submit" name="update">Update</button>
+        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="read">Read</button>
+    </form>
+</body>
+</html>

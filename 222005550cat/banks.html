@@ -1,0 +1,36 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--kwizera jean felix 2220005550--->
+    <button class="back-button"onclick="window.location.href='contact.html'">BACK</button>
+   <!--kwizera jean felix 2220005550--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+    <title>bank page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <body bgcolor="yellow">
+</head>
+<body>
+    <h1>banks page</h1>
+    
+    <!-- bank Registration Form -->
+    <h2>Create banks</h2>
+    <form method="post" action="landingbanks.php">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label>Address:</label><br>
+        <input type="text" name="address" required><br>
+        <label>Phone Number:</label><br>
+        <input type="number" name="phone_number" required><br>
+        <label>Account Number:</label><br>
+        <input type="number" name="account_number" required><br>
+        <label for="bankname">Bank Name:</label>
+        <select name="bankname">
+            <option value="BNR">BNR</option>
+            <option value="equity">Equity</option>
+            <option value="zigama">Zigama</option>
+        </select>
+        <button type="submit" name="create">Create</button>
+    
+    </form></body></center></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+//kwizera jean felix 222005550 april 2024
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Driver Page</h1>
+    <h2>Create Driver</h2>
+    <form id="driverForm" method="post" action="landingdriver.php" onsubmit="return validateForm()">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="first_name" id="first_name" required><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" name="last_name" id="last_name" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" name="phone" id="phone" required><br>
+        <label for="licence_number">Licence Number:</label><br>
+        <input type="text" name="licence_number" id="licence_number" required><br>
+        <label for="vehicle_id">Vehicle ID:</label><br>
+        <input type="text" name="vehicle_id" id="vehicle_id" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            var phone = document.getElementById("phone").value;
+            var licenceNumber = document.getElementById("licence_number").value;
+            var vehicleId = document.getElementById("vehicle_id").value;
+
+            if (firstName === '' || lastName === '' || phone === '' || licenceNumber === '' || vehicleId === '') {
+                alert("All fields are required");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

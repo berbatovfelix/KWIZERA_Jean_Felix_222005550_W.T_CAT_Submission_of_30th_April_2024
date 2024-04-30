@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="/master.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+ <a href="home.html">Home</a>
+        
+        
+      </div>
+     <a href="contact.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+    <a href="README.html">README</a>
+    <a href="logout.php">Sign Out</a>
+  </nav>
+
+  <div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="logout.php">LOGOUT</a>
+  </div>
+
+  <button class="back-button" onclick="window.location.href='index.html'">BACK</button>
+
+  <center>
+    <main>
+      <section>
+        <center>
+          <video width="400" height="200" controls align="center">
+            <source src="fuel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </center>
+        <center>
+          <h1>WELCOME TO MY PROJECT</h1>
+          <h1>kwizera_jean_felix_fdamp</h1>
+        </center>
+      </section>
+    </main>
+  </center>
+
+  <script type="text/javascript">
+    const colors = ['#ff0000', '#f1f1f1', '#00ff00', '#000ff', '#ffff00', '#ff00ff', '#00ff'];
+    let index = 0;
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length;
+    }
+
+    // Change background color every second
+    setInterval(changeBackgroundColor, 1000);
+  </script>
+</body>
+</html>

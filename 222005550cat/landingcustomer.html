@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Site</title>
+    <!-- Add CSS link for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Back button -->
+    <button class="back-button" onclick="window.location.href='contact.html'">BACK</button>
+    
+    <!-- Main heading -->
+    <h1>Customer Site</h1>
+    
+    <!-- Customer Registration Form -->
+    <h2>Create Customer</h2>
+    <form id="createCustomerForm" method="post" action="landingcustomer.php">
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" name="last_name" required><br>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="first_name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" required><br> <!-- Changed input type to "tel" for better mobile compatibility -->
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" required><br>
+        <label for="payment_method">Payment Method:</label><br>
+        <select name="payment_method">
+            <option value="mtn">MTN</option>
+            <option value="tigo">Tigo</option>
+        </select><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- Update/Delete/View Customer Form -->
+    <h2>Manage Customer</h2>
+    <form id="manageCustomerForm" method="post" action="landingcustomer.php">
+        <input type="number" name="customer_id" placeholder="Customer ID">
+        <input type="text" name="newlast_name" placeholder="New Last Name">
+        <input type="text" name="newfirst_name" placeholder="New First Name">
+        <input type="email" name="newemail" placeholder="New Email">
+        <input type="tel" name="newphone" placeholder="New Phone"> <!-- Changed input type to "tel" for better mobile compatibility -->
+        <input type="text" name="newaddress" placeholder="New Address">
+        <select name="newpayment_method">
+            <option value="mtn">MTN</option>
+            <option value="tigo">Tigo</option>
+        </select>
+        <button type="submit" name="update">Update</button>
+        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="read">View</button>
+    </form>
+
+    <!-- JavaScript for form validation -->
+    <script>
+        // Form validation for creating a customer
+        document.getElementById("createCustomerForm").addEventListener("submit", function(event) {
+            var phoneInput = document.getElementsByName("phone")[0];
+            var phonePattern = /^\d{10}$/; // Assuming phone number is 10 digits long
+
+            if (!phonePattern.test(phoneInput.value)) {
+                alert("Please enter a valid phone number (10 digits).");
+                event.preventDefault();
+            }
+        });
+
+        // Form validation for updating a customer
+        document.getElementById("manageCustomerForm").addEventListener("submit", function(event) {
+            var phoneInput = document.getElementsByName("newphone")[0];
+            var phonePattern = /^\d{10}$/; // Assuming phone number is 10 digits long
+
+            if (phoneInput.value !== "" && !phonePattern.test(phoneInput.value)) {
+                alert("Please enter a valid phone number (10 digits).");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

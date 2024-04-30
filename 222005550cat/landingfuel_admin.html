@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuel_admin Site</title>
+    <!-- Add CSS link for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Back button -->
+    <button class="back-button" onclick="window.location.href='contact.html'">BACK</button>
+    
+    <!-- Main heading -->
+    <h1>fuel_admin Site</h1>
+    
+    <!-- Customer Registration Form -->
+    <h2>Create Customer</h2>
+    <form method="post" action="landingfuel_admin.php">
+        <label for="email">email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="username">username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="Password">Password:</label><br>
+        <input type="number" name="Password" required><br>
+        <label for="first_name">firs_name:</label><br>
+        <input type="text" name="first_name" required><br>
+        <label for="last_name">last_name:</label><br>
+        <input type="text" name="last_name" required><br> <!-- Changed input type to "tel" for better mobile compatibility -->
+        <label for="phone_number">phone_number:</label><br>
+        <input type="number" name="phone_number" required><br>
+        <label for="permissions">permissions:</label><br>
+        <input type="text" name="permissions" required><br>
+        
+        </select><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- Update/Delete/View fuel_admin Form -->
+    <h2>Manage fuel_admin</h2>
+    <form method="post" action="landingfuel_admin.php">
+        <input type="number" name=" adm_id" placeholder="admin ID">
+        <input type="email" name="newemail" placeholder="New email">
+        <input type="username" name="newusername" placeholder="New username">
+        <input type="number" name="newPassword" placeholder="New Password">
+        <input type="text" name="newfirst_name" placeholder="New firs_name">
+        <input type="text" name="newlast_name" placeholder="newlast_name"> <!-- Changed input type to "tel" for better mobile compatibility -->
+        <input type="text" name="newphone_number" placeholder="New phone_number">
+         <input type="text" name="newpermissions" placeholder="New permissions">
+       
+        </select>
+        <button type="submit" name="update">Update</button>
+        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="read">View</button>
+    </form>
+</body>
+</html>

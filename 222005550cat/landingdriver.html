@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Panel</title>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='contact.html'">BACK</button>
+    <!-- kwizera 222005550 -->
+    <h1>Driver Panel</h1>
+    
+    <!-- Driver Registration Form -->
+    <h2>Create Driver</h2>
+    <form method="post" action="landingdriver.php">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="firstname" required><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" name="last_name" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" name="phone" required><br>
+        <label for="licence_number">Licence Number:</label><br>
+        <input type="text" name="licence_number" required><br>
+        <label for="vehicle_id">Vehicle ID:</label><br>
+        <input type="text" name="vehicle_id" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- Update, Delete, Read Driver Form -->
+    <h2>User Driver</h2>
+    <form method="post" action="landingdriver.php">
+        <input type="number" name="driver_id" placeholder="New Driver ID">
+        <input type="text" name="newfirst_name" placeholder="New First Name">
+        <input type="text" name="newlast_name" placeholder="New Last Name">
+        <input type="text" name="newphone" placeholder="New Phone">
+        <input type="text" name="newlicence_number" placeholder="New Licence Number">
+        <input type="text" name="newvehicle_id" placeholder="New Vehicle ID">
+        <button type="submit" name="update">Update</button>
+        <button type="submit" name="delete">Delete</button>
+        <button type="submit" name="read">Read</button>
+    </form>
+</body>
+</html>
